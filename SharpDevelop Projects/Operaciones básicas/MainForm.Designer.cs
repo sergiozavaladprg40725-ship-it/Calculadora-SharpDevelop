@@ -46,6 +46,7 @@ namespace Operaciones_básicas
 			this.btnDividir = new System.Windows.Forms.Button();
 			this.btnLimpiar = new System.Windows.Forms.Button();
 			this.lblRespuesta = new System.Windows.Forms.Label();
+			this.btnModulo = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblPrimero
@@ -135,11 +136,22 @@ namespace Operaciones_básicas
 			this.lblRespuesta.Size = new System.Drawing.Size(212, 42);
 			this.lblRespuesta.TabIndex = 9;
 			// 
+			// btnModulo
+			// 
+			this.btnModulo.Location = new System.Drawing.Point(197, 129);
+			this.btnModulo.Name = "btnModulo";
+			this.btnModulo.Size = new System.Drawing.Size(75, 23);
+			this.btnModulo.TabIndex = 10;
+			this.btnModulo.Text = "Modulo";
+			this.btnModulo.UseVisualStyleBackColor = true;
+			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.lblRespuesta);
 			this.Controls.Add(this.btnLimpiar);
 			this.Controls.Add(this.btnDividir);
@@ -155,6 +167,7 @@ namespace Operaciones_básicas
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Label lblRespuesta;
 		private System.Windows.Forms.Button btnLimpiar;
 		private System.Windows.Forms.Button btnDividir;

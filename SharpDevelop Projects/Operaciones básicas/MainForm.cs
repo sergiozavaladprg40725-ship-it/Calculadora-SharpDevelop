@@ -83,5 +83,15 @@ namespace Operaciones_básicas
 		    dividir = lblPrimero / lblSegundo;
 		    lblRespuesta.Text = Convert.ToString(dividir);
 		}
+		
+		void BtnModuloClick(object sender, EventArgs e)
+		{
+		    double lblPrimero, lblSegundo, modulo;
+		    
+		    lblPrimero = double.Parse(txtPrimero.Text);
+		    lblSegundo = double.Parse(txtSegundo.Text);
+		    
+		    lblRespuesta.Text = "Residuo: " + (lblPrimero % lblSegundo);
+		}
 	}
 }
