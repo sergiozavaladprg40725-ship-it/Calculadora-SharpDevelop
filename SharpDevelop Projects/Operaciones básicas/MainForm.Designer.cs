@@ -47,6 +47,7 @@ namespace Operaciones_básicas
 			this.btnLimpiar = new System.Windows.Forms.Button();
 			this.lblRespuesta = new System.Windows.Forms.Label();
 			this.btnModulo = new System.Windows.Forms.Button();
+			this.btnformulaGeneral = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblPrimero
@@ -87,7 +88,7 @@ namespace Operaciones_básicas
 			// 
 			// btnMultiplicacion
 			// 
-			this.btnMultiplicacion.Location = new System.Drawing.Point(12, 176);
+			this.btnMultiplicacion.Location = new System.Drawing.Point(37, 176);
 			this.btnMultiplicacion.Name = "btnMultiplicacion";
 			this.btnMultiplicacion.Size = new System.Drawing.Size(75, 23);
 			this.btnMultiplicacion.TabIndex = 4;
@@ -111,7 +112,7 @@ namespace Operaciones_básicas
 			// 
 			// btnDividir
 			// 
-			this.btnDividir.Location = new System.Drawing.Point(109, 176);
+			this.btnDividir.Location = new System.Drawing.Point(168, 176);
 			this.btnDividir.Name = "btnDividir";
 			this.btnDividir.Size = new System.Drawing.Size(75, 23);
 			this.btnDividir.TabIndex = 7;
@@ -121,7 +122,7 @@ namespace Operaciones_básicas
 			// 
 			// btnLimpiar
 			// 
-			this.btnLimpiar.Location = new System.Drawing.Point(197, 226);
+			this.btnLimpiar.Location = new System.Drawing.Point(197, 272);
 			this.btnLimpiar.Name = "btnLimpiar";
 			this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
 			this.btnLimpiar.TabIndex = 8;
@@ -146,11 +147,22 @@ namespace Operaciones_básicas
 			this.btnModulo.UseVisualStyleBackColor = true;
 			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
+			// btnformulaGeneral
+			// 
+			this.btnformulaGeneral.Location = new System.Drawing.Point(12, 226);
+			this.btnformulaGeneral.Name = "btnformulaGeneral";
+			this.btnformulaGeneral.Size = new System.Drawing.Size(260, 23);
+			this.btnformulaGeneral.TabIndex = 11;
+			this.btnformulaGeneral.Text = "Ir a la formula general";
+			this.btnformulaGeneral.UseVisualStyleBackColor = true;
+			this.btnformulaGeneral.Click += new System.EventHandler(this.BtnformulaGeneralClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.ClientSize = new System.Drawing.Size(284, 307);
+			this.Controls.Add(this.btnformulaGeneral);
 			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.lblRespuesta);
 			this.Controls.Add(this.btnLimpiar);
@@ -167,6 +179,7 @@ namespace Operaciones_básicas
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnformulaGeneral;
 		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Label lblRespuesta;
 		private System.Windows.Forms.Button btnLimpiar;

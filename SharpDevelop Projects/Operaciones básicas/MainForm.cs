@@ -86,12 +86,18 @@ namespace Operaciones_básicas
 		
 		void BtnModuloClick(object sender, EventArgs e)
 		{
-		    double lblPrimero, lblSegundo, modulo;
+		    double lblPrimero, lblSegundo;
 		    
 		    lblPrimero = double.Parse(txtPrimero.Text);
 		    lblSegundo = double.Parse(txtSegundo.Text);
 		    
 		    lblRespuesta.Text = "Residuo: " + (lblPrimero % lblSegundo);
+		}
+		
+		void BtnformulaGeneralClick(object sender, EventArgs e)
+		{
+			calcular_los_valores_de_x1_y_x2 ventana = new calcular_los_valores_de_x1_y_x2();
+    		ventana.Show();
 		}
 	}
 }
