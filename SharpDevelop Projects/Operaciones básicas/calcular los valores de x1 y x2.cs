@@ -54,5 +54,10 @@ namespace Operaciones_básicas
 		        lblResultado.Text = "X1 = " + x1.ToString() + "\nX2 = " + x2.ToString();
 		    }
 		}
+		
+		void Calcular_los_valores_de_x1_y_x2Load(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }

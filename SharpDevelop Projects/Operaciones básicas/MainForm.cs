@@ -99,5 +99,10 @@ namespace Operaciones_básicas
 			calcular_los_valores_de_x1_y_x2 ventana = new calcular_los_valores_de_x1_y_x2();
     		ventana.Show();
 		}
+		
+		void LblRespuestaClick(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }
